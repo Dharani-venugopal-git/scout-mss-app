@@ -13,7 +13,7 @@ binding = "ASSETS"
 # The shared storage. Create it once (see README step 3), then paste its id here.
 [[kv_namespaces]]
 binding = "MSS_KV"
-id = "PASTE_YOUR_KV_NAMESPACE_ID_HERE"
+id = "0297c8bd843044609dfac2f0265ea3b2"
 
 # The team passcode is NOT stored in this file.
 # Set it as a secret so it stays private (README step 4):
