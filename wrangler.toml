@@ -1,0 +1,21 @@
+# Scout MSS Weekly Report — Cloudflare configuration
+# You only edit ONE line here: paste your KV namespace id where shown below.
+
+name = "scout-mss-dashboard"
+main = "src/index.js"
+compatibility_date = "2025-03-03"
+
+# Serves everything in ./public (the dashboard) as the website.
+[assets]
+directory = "./public"
+binding = "ASSETS"
+
+# The shared storage. Create it once (see README step 3), then paste its id here.
+[[kv_namespaces]]
+binding = "MSS_KV"
+id = "PASTE_YOUR_KV_NAMESPACE_ID_HERE"
+
+# The team passcode is NOT stored in this file.
+# Set it as a secret so it stays private (README step 4):
+#     wrangler secret put TEAM_PASSCODE
+# (or add it in the Cloudflare dashboard under the Worker's Variables & Secrets)
